@@ -1,37 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="ru">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./img/spotify-2.svg">
+  <meta name="viewport" content="width=device-width">
+  <title>Spotify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <div class="app">
+    <nav class="navigation__left">
+      <a href="./index.html" class="nav__logo">
+        <img src="./img/spotify-logo-with-text-1.svg" alt="Лого" width="130">
+      </a>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="./index.html" class="link"><img src="./img/home_icon.svg" alt="">
+            <span>Главная</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="./media_library.html" class="link"><img src="./img/media_icon.svg" alt="">
+            <span>Моя медиатека</span>
+          </a>
+        </li>
+      </ul>
+      <hr class="menu__hr">
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#" class="link"><img src="./img/add_icon.svg" alt="">
+            <span>Создать плейлист</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="link"><img src="./img/favor_icon.svg" alt="">
+            <span>Любимые треки</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="headmain">
+      <header class="header__menu">
+        <div class="search-box">
+          <input type="text" class="search-txt" placeholder="Найди свою музыку">
+          <img src="./img/search_icon.svg" alt="">
+        </div>
+        <div class="user">
+          <p class="user__name">User Userovich</p>
+          <img src="./img/user_icon.svg" alt="" class="user__icon">
+        </div>
+      </header>
+      <div class="main__content">
+        <div class="music">
+          <div class="name__page">
+            <h1>Главная</h1>
+          </div>
+          <div class="card__line-container">
+            <div class="card__line_name">
+              <p class="card__line_name">Для вас</p>
+              <div class="arrows">
+                <img src="./img/left_icon.svg" alt="">
+                <img src="./img/right_icon.svg" alt="">
+              </div>
+            </div>
+            <div class="card__line">
+              <div class="card">
+                <img src="./img/card_cover.jpg" alt="Обложка">
+                <p class="name">Nightsiren</p>
+                <p class="author">Melt Yourself Down</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover.jpg" alt="Обложка">
+                <p class="name">Fun Fun Fun</p>
+                <p class="author">Melt Yourself Down</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover.jpg" alt="Обложка">
+                <p class="name">I Got Time</p>
+                <p class="author">Melt Yourself Down</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover.jpg" alt="Обложка">
+                <p class="name">All We Have</p>
+                <p class="author">Melt Yourself Down</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover.jpg" alt="Обложка">
+                <p class="name">Nightsiren</p>
+                <p class="author">Melt Yourself Down</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover.jpg" alt="Обложка">
+                <p class="name">I Got Time</p>
+                <p class="author">Melt Yourself Down</p>
+              </div>
+            </div>
+          </div>
+          <div class="card__line-container">
+            <div class="card__line_name">
+              <p class="card__line_name">Любителям</p>
+              <div class="arrows">
+                <img src="./img/left_icon.svg" alt="">
+                <img src="./img/right_icon.svg" alt="">
+              </div>
+            </div>
+            <div class="card__line">
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Get Got</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Birds</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Get Got</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Birds</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Get Got</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Birds</p>
+                <p class="author">Death Grips</p>
+              </div>
+            </div>
+          </div>
+          <div class="card__line-container">
+            <div class="card__line_name">
+              <p class="card__line_name">Любителям</p>
+              <div class="arrows">
+                <img src="./img/left_icon.svg" alt="">
+                <img src="./img/right_icon.svg" alt="">
+              </div>
+            </div>
+            <div class="card__line">
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Get Got</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Birds</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Get Got</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Birds</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Get Got</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Birds</p>
+                <p class="author">Death Grips</p>
+              </div>
+            </div>
+          </div>
+          <div class="card__line-container">
+            <div class="card__line_name">
+              <p class="card__line_name">Любителям</p>
+              <div class="arrows">
+                <img src="./img/left_icon.svg" alt="">
+                <img src="./img/right_icon.svg" alt="">
+              </div>
+            </div>
+            <div class="card__line">
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Get Got</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Birds</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Get Got</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Birds</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Get Got</p>
+                <p class="author">Death Grips</p>
+              </div>
+              <div class="card">
+                <img src="./img/card_cover_2.jpg" alt="Обложка">
+                <p class="name">Birds</p>
+                <p class="author">Death Grips</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer >
+      <div class="player">
+        <div class="music__now">
+          <img src="./img/music_cover.jpg" alt="">
+          <div class="music__now-text">
+            <p class="track">Ничего Не Говори</p>
+            <p class="artist">Рок-Острова</p>
+          </div>
+          <img id="like" src="./img/like_icon.svg" alt="">
+        </div>
+        <div class="player__control">
+          <div class="player__button">
+            <img src="./img/shuffle_logo.svg" alt="">
+            <img src="./img/prev_icon.svg" alt="">
+            <img src="./img/pause_logo.svg" alt="">
+            <img src="./img/next_icon.svg" alt="">
+            <img src="./img/repeat_logo.svg" alt="">
+          </div>
+          <div class="progress__bar">
+            <p class="time-pass">0:00</p><div class="progress__line"></div><p class="time-all">4:21</p>
+          </div>
+        </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        <div class="settings">
+          <img src="./img/volume_icon.svg" alt="">
+          <img src="./img/more_icon.svg" alt="">
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
